@@ -1,8 +1,7 @@
-// ── CONFIG ──────────────────────────────────────────────
-// API key is now on the server — never exposed in client code
+
 const API_URL = '/api/chat';
 
-// ── LOAD DATA ────────────────────────────────────────────
+// ── LOAD DATA ─
 let portfolioData = null;
 
 async function init() {
@@ -22,7 +21,7 @@ function renderAll() {
   renderSamples();
 }
 
-// ── RENDER FUNCTIONS ─────────────────────────────────────
+// ── RENDER FUNCTIONS ─
 
 function renderHero() {
   const d = portfolioData;
@@ -167,7 +166,7 @@ function renderSamples() {
   });
 }
 
-// ── AI CHAT ──────────────────────────────────────────────
+// ── AI 
 
 const chatHistory = [];
 
@@ -257,7 +256,7 @@ async function sendMessage(text) {
   btn.disabled = false;
 }
 
-// ── NAV ──────────────────────────────────────────────────
+// ── NAV 
 
 function toggleMenu() {
   document.getElementById('nav-links').classList.toggle('open');
@@ -277,13 +276,13 @@ document.addEventListener('DOMContentLoaded', () => {
   init();
 });
 
-// ── VOICE ─────────────────────────────────────────────────
+//Voice
 
 let recognition = null;
 let isListening = false;
 let selectedVoice = null;
 
-// Loading available voices and populate the dropdown
+// Loading available voices
 function loadVoices() {
   const select = document.getElementById('voice-select');
   if (!select) return;
@@ -306,7 +305,6 @@ function loadVoices() {
   };
 }
 
-// Voices load async — handle both immediate and delayed
 if ('speechSynthesis' in window) {
   window.speechSynthesis.onvoiceschanged = loadVoices;
   loadVoices();
@@ -350,7 +348,7 @@ function toggleMic() {
         interim += e.results[i][0].transcript;
       }
     }
-    // Show live text in input box — user can edit before sending
+    
     input.value = final || interim;
   };
 
@@ -359,7 +357,6 @@ function toggleMic() {
     micBtn.textContent = '🎤';
     micBtn.title = 'Speak';
     input.placeholder = 'Ask me anything about Himanshu...';
-    // Don't auto-send — let user review and hit Send or Enter
   };
 
   recognition.onerror = (e) => {
