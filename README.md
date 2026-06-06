@@ -2,7 +2,7 @@
 
 An interactive personal portfolio with an AI Career Copilot that answers questions about my skills, projects, experience, and background — grounded entirely in my own data, no hallucinations.
 
-**Live:** [himanshu-jain.onrender.com](https://himanshu-jain.onrender.com) *(update after deploy)*
+**Live:** [himanshu-jain.onrender.com](https://ai-enabled-portfolio.onrender.com)
 **GitHub:** [github.com/Himanshu-coder101/portfolio](https://github.com/Himanshu-coder101/portfolio)
 
 ---
@@ -144,7 +144,7 @@ Without careful prompt design, the model would occasionally invent details. Fixe
 - Add typing indicators and timestamps to chat UI
 - Dark/light theme toggle
 - Deploy to a custom domain
-- Adding voice activation in ai chat bots
+- Adding other languages also in chatbot
 
 ---
 
