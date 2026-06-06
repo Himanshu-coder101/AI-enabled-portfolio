@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Himanshu Jain · Portfolio</title>
+  <meta name="description" content="Portfolio of Himanshu Jain — ECE student at BITS Pilani Goa, interested in AI/ML and Web Development."/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- ── NAV ── -->
+<nav>
+  <span class="nav-logo">HJ.dev</span>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#copilot">Ask AI</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- ── HERO ── --> //    brief intro about me
+<section id="hero">
+  <div class="hero-content">
+    <span class="hero-tag">👋 Hey, I'm</span>
+    <h1 class="hero-name" id="hero-name">Loading...</h1>
+    <p class="hero-headline" id="hero-headline"></p>
+    <span class="hero-location" id="hero-location"></span>
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="#copilot">Ask my AI Copilot ↓</a>
+      <a class="btn btn-outline" id="hero-email" href="#">Get in touch</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── ABOUT ── -->
+<section id="about">
+  <p class="section-label">About</p>
+  <h2 class="section-title">Who I am</h2>
+  <p class="about-text" id="about-text"></p>
+  <div class="tag-row" id="interests"></div>
+</section>
+
+<!-- ── SKILLS ── -->
+<section id="skills">
+  <p class="section-label">Skills</p>
+  <h2 class="section-title">What I know</h2>
+  <div class="skills-grid" id="skills-grid"></div>
+</section>
+
+<!-- ── PROJECTS ── -->
+<section id="projects">
+  <p class="section-label">Projects</p>
+  <h2 class="section-title">What I've built</h2>
+  <div class="projects-grid" id="projects-grid"></div>
+</section>
+
+<!-- ── EXPERIENCE ── -->
+<section id="experience">
+  <p class="section-label">Experience</p>
+  <h2 class="section-title">Where I've worked</h2>
+  <div id="experience-list"></div>
+</section>
+
+<!-- ── EDUCATION ── -->
+<section id="education">
+  <p class="section-label">Education</p>
+  <h2 class="section-title">Where I study</h2>
+  <div class="edu-card">
+    <div class="edu-icon">🎓</div>
+    <div>
+      <div class="edu-institution" id="edu-institution"></div>
+      <div class="edu-degree" id="edu-degree"></div>
+      <div class="tag-row">
+        <span class="edu-badge" id="edu-year"></span>
+        <span class="edu-badge" id="edu-sem"></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="edu-card" style="margin-top: 16px;">
+    <div class="edu-icon">🏫</div>
+    <div>
+      <div class="edu-institution">Silver Oak School</div>
+      <div class="edu-degree">CBSE · 2014 – 2022</div>
+      <div class="tag-row">
+        <span class="edu-badge">97%</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── AI COPILOT ── -->
+<section id="copilot">
+  <p class="section-label">AI Copilot</p>
+  <h2 class="section-title">Ask anything about me</h2>
+  <div class="copilot-box">
+    <div class="copilot-header">
+      <div class="copilot-dot"></div>
+      <span class="copilot-title">Career Copilot</span>
+      <span class="copilot-sub">Powered by Groq · Grounded in my data</span>
+    </div>
+    <div class="chat-window" id="chat-window">
+      <div class="message bot">
+        Hi! I'm Himanshu's AI Career Copilot. I can answer questions about his skills, projects, education, and background. What would you like to know?
+      </div>
+    </div>
+    <div class="samples" id="sample-questions"></div>
+    <div class="voice-selector-row">
+      <label for="voice-select">🔊 Voice:</label>
+      <select id="voice-select"></select>
+    </div>
+    <div class="chat-input-row">
+      <input
+        class="chat-input"
+        id="chat-input"
+        type="text"
+        placeholder="Ask me anything about Himanshu..."
+        autocomplete="off"
+      />
+      <button class="mic-btn" id="mic-btn" onclick="toggleMic()" title="Speak">🎤</button>
+      <button class="send-btn" id="send-btn" onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+</section>
+
+<!-- ── CONTACT ── -->
+<section id="contact">
+  <p class="section-label">Contact</p>
+  <h2 class="section-title">Get in touch</h2>
+  <div class="contact-row">
+    <a class="contact-link" id="contact-email" href="#">
+      <span>📧</span>
+      <span id="contact-email-text">Email</span>
+    </a>
+    <a class="contact-link" id="contact-linkedin" href="#" target="_blank" rel="noopener">
+      <span>💼</span>
+      <span>LinkedIn</span>
+    </a>
+    <a class="contact-link" id="contact-github" href="#" target="_blank" rel="noopener">
+      <span>🐙</span>
+      <span>GitHub</span>
+    </a>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <span>Built with HTML · CSS · JS · Express · Groq API</span>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

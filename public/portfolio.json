@@ -1,0 +1,120 @@
+{
+  "name": "Himanshu Jain",
+  "email": "himanshujain8913@gmail.com",
+  "location": "Alwar, Rajasthan, India",
+  "education": {
+    "institution": "BITS Pilani Goa Campus",
+    "degree": "Bachelor of Engineering",
+    "branch": "Electronics and Communication Engineering",
+    "year": "Second Year",
+    "semester": "Fourth Semester"
+  },
+  "headline": "Building at the intersection of Engineering, AI, and Software Development.",
+  "about": "I am an Electronics and Communication Engineering student at BITS Pilani Goa Campus. I am interested in AI/ML and Web Development and enjoy learning through hands-on projects. Currently, I am strengthening my foundation in programming, problem solving, and Data Structures & Algorithms while exploring modern software technologies.",
+  "interests": [
+    "Artificial Intelligence",
+    "Machine Learning",
+    "Web Development",
+    "Software Development",
+    "Problem Solving"
+  ],
+  "skills": {
+    "programming_languages": [
+      {
+        "name": "Python",
+        "level": "Intermediate"
+      },
+      {
+        "name": "C",
+        "level": "Intermediate"
+      },
+      {
+        "name": "Java",
+        "level": "Intermediate"
+      },
+      {
+        "name": "C++",
+        "level": "Learning"
+      }
+    ],
+    "web_development": [
+      {
+        "name": "HTML",
+        "level": "Intermediate"
+      },
+      {
+        "name": "CSS",
+        "level": "Intermediate"
+      }
+    ],
+    "computer_science": [
+      "Data Structures and Algorithms",
+      "Problem Solving"
+    ],
+    "low_level_programming": [
+      {
+        "name": "Assembly Language",
+        "level": "Beginner"
+      }
+    ]
+  },
+  "projects": [
+    {
+      "title": "Amazon UI Clone",
+      "description": "A frontend clone of Amazon built using HTML and CSS. The project focused on understanding webpage layouts, responsive design, styling, navigation components, and frontend fundamentals.",
+      "technologies": [
+        "HTML",
+        "CSS"
+      ],
+      "status": "Completed",
+      "github": "https://github.com/Himanshu-coder101/Amazon-Clone.git"
+    },
+    {
+      "title": "Whack-a-Mole",
+      "description": "A microprocessors-based project implementing a Whack-a-Mole style game. The project involved low-level programming concepts, hardware interaction, and real-time input handling.",
+      "technologies": [
+        "Assembly Language",
+        "Microprocessors"
+      ],
+      "status": "Completed"
+    }
+  ],
+  "contact": {
+    "email": "himanshujain8913@gmail.com",
+    "linkedin": "https://linkedin.com/in/himanshu-jain-97881a206",
+    "github": "https://github.com/Himanshu-coder101"
+  },
+  "experience": [
+  {
+    "company": "Caarya Innovative Solutions Private Limited",
+    "duration": "May 2026 – July 2026",
+    "description": "Worked on building an AI Portfolio Copilot project involving portfolio design, AI integration, deployment, and product-oriented development."
+  }
+],
+  "sample_questions": [
+    "Who is Himanshu Jain?",
+    "What is Himanshu studying?",
+    "What skills does Himanshu have?",
+    "Tell me about the Amazon UI Clone project.",
+    "Tell me about the Whack-a-Mole project.",
+    "What technologies does Himanshu know?",
+    "What are Himanshu's interests?",
+    "What is his educational background?",
+    "What is he currently learning?",
+    "What areas of technology interest him?"
+  ],
+  "ai_instructions": {
+    "role": "AI Career Copilot",
+    "behavior": [
+      "Answer only using the information provided in this JSON file.",
+      "Do not invent information.",
+      "If information is unavailable, say: 'I do not have that information available.'",
+      "Keep responses professional, concise, and informative."
+    ]
+  },
+  "schooling": {
+    "institution": "Silver Oak School",
+    "years": "2014 \u2013 2022",
+    "duration": "8 years"
+  }
+}
